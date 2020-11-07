@@ -234,7 +234,7 @@
 .device-mockup.iphone_se > .device > .button,
 .device-mockup.iphone_se.portrait > .device > .button {
 	display: block;
-	top: 86.3%; bottom: 5.5%; left:  42%; right: 42%;
+	top: 95.5%; bottom: 2.0%; left:  42%; right: 42%;
 }
 
 .device-mockup.iphone_se.landscape > .device > .button {
