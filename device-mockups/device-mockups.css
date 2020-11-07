@@ -255,7 +255,7 @@
 .device-mockup.iphone6 > .device,
 .device-mockup.iphone6.black > .device,
 .device-mockup.iphone6.portrait.black > .device {
-	background-image: url("nexus_6/nexus_6_port.png");
+	background-image: url("iphone_x/iphone_x_black_port.png");
 }
 
 .device-mockup.iphone6.landscape > .device,
