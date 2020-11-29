@@ -39,12 +39,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
   right: 15px;
   border: 3px solid #f1f1f1;
   z-index: 9;
-}
-    
- .overlay_filter {
-    position: fixed;
-
-    background:black;
+  
+  background:black;
     background:rgba(0,0,0,0.8);
     backdrop-filter: blur(6px);
    
@@ -55,6 +51,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
     filter:blur(4px);
 }
+    
+
  
 
 /* Add styles to the form container */
@@ -306,9 +304,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
 };
 </script>
   
-
-  <div class="overlay_filter" id="myFilter>
-  </div>
                                   
 <div class="form-popup" id="myForm">
                                   
@@ -332,14 +327,12 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 <script>
 function openForm() {
-                                                                    
-  document.getElementById("myFilter").style.display = "block";
+                                                                 
   document.getElementById("myForm").style.display = "block";
 }
 
 function closeForm() {
-  document.getElementById("myForm").style.display = "none";                               
-  document.getElementById("myFilter").style.display = "none";
+  document.getElementById("myForm").style.display = "none";    
 }
 </script>
   
