@@ -31,20 +31,6 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
 
-/* Button used to open the contact form - fixed at the bottom of the page */
-.open-button {
-  background-color: #555;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: fixed;
-  bottom: 23px;
-  right: 28px;
-  width: 280px;
-}
-
 /* The popup form - hidden by default */
 .form-popup {
   display: none;
@@ -53,6 +39,13 @@ body {font-family: Arial, Helvetica, sans-serif;}
   right: 15px;
   border: 3px solid #f1f1f1;
   z-index: 9;
+}
+   
+    .blur {
+  background: rgba(255, 255, 255, 0.2); // Make sure this color has an opacity of less than 1
+  backdrop-filter: blur(8px); // This be the blur
+  height: 100vh;
+	width: 50%;
 }
 
 /* Add styles to the form container */
@@ -99,58 +92,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
   opacity: 1;
 }
 </style>
-
-  
-  
-  
- 
-<style> 
-    body { 
-        margin: 0; 
-        padding: 0; 
-    } 
-  
-    section { 
-        position: relative; 
-        background: url(demo.jpg); 
-        background-attachment: fixed; 
-        height: 100vh; 
-    } 
-  
-    section .layout { 
-        position: relative; 
-        top: 35%; 
-        left: 30%; 
-        max-width: 600px; 
-        padding: 50px; 
-        box-shadow: 0 10px 20px rgba(0, 0, 0, .5); 
-        color: rgb(255, 254, 254); 
-    } 
-  
-    section .layout::before { 
-        content: ''; 
-        position: absolute; 
-        top: 0; 
-        bottom: 0; 
-        left: 0; 
-        right: 0; 
-        background: url(demo.jpg); 
-        background-attachment: fixed; 
-        filter: blur(8px); 
-    } 
-  
-    section .layout h2 { 
-        position: relative; 
-    } 
-  
-    section .layout p { 
-        position: relative; 
-    } 
-  
-    section .layout button { 
-        position: relative; 
-    } 
-</style> 
 
   
 </head>
@@ -357,17 +298,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 </script>
   
 
-<div class="form-popup" id="myForm">
-  
-  <section> 
-        <div class="layout"> 
-            
-          
-          
-          
-          
-          
-          <form action="https://formspree.io/f/maylddao"
+<div class="form-popup" id="myForm">  
+      <form action="https://formspree.io/f/maylddao"
         method="POST" 
         class="form-container">
     <h1 style="text-align:center"><b>Subscribe</b></h1>
@@ -382,15 +314,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
 </div>
-          
-          
-          
-          
-            
-  
-            
-        </div> 
-    </section> 
   
 
 <script>
