@@ -112,6 +112,69 @@ body {font-family: Arial, Helvetica, sans-serif;}
 </style>
 
   
+  
+  
+  
+  
+  <style> 
+    body { 
+        margin: 0; 
+        padding: 0; 
+    } 
+
+    section { 
+        position: relative; 
+        background: url(demo.jpg); 
+        background-attachment: fixed; 
+        height: 100vh; 
+    } 
+
+    section .layout { 
+        position: relative; 
+        top: 35%; 
+        left: 30%; 
+        max-width: 600px; 
+        padding: 50px; 
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .5); 
+        color: rgb(255, 254, 254); 
+    } 
+
+    section .layout::before { 
+        content: ''; 
+        position: absolute; 
+        top: 0; 
+        bottom: 0; 
+        left: 0; 
+        right: 0; 
+        background: url(demo.jpg); 
+        background-attachment: fixed; 
+        filter: blur(8px); 
+    } 
+
+    section .layout h2 { 
+        position: relative; 
+    } 
+
+    section .layout p { 
+        position: relative; 
+    } 
+
+    section .layout button { 
+        position: relative; 
+    } 
+</style> 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 </head>
 
 <body id="page-top">
@@ -318,6 +381,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <div class="thickbox-open" id="myFilter">
 </div> 
   
+<div class="my_layout">   
 <div class="form-popup" id="myForm">
                                   
         <form action="https://formspree.io/f/maylddao"
@@ -336,17 +400,17 @@ body {font-family: Arial, Helvetica, sans-serif;}
     
   </form>
 </div>
-  
+</div>   
 
 <script>
 function openForm() {
        
-  document.getElementById("myForm").style.display = "block";
+  document.getElementById("my_layout").style.display = "block";
 }
 
 function closeForm() {
   
-  document.getElementById("myForm").style.display = "none"; 
+  document.getElementById("my_layout").style.display = "none"; 
 }
 </script>
   
