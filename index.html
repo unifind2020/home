@@ -99,7 +99,59 @@ body {font-family: Arial, Helvetica, sans-serif;}
   opacity: 1;
 }
 </style>
+
   
+  
+  
+ 
+<style> 
+    body { 
+        margin: 0; 
+        padding: 0; 
+    } 
+  
+    section { 
+        position: relative; 
+        background: url(demo.jpg); 
+        background-attachment: fixed; 
+        height: 100vh; 
+    } 
+  
+    section .layout { 
+        position: relative; 
+        top: 35%; 
+        left: 30%; 
+        max-width: 600px; 
+        padding: 50px; 
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .5); 
+        color: rgb(255, 254, 254); 
+    } 
+  
+    section .layout::before { 
+        content: ''; 
+        position: absolute; 
+        top: 0; 
+        bottom: 0; 
+        left: 0; 
+        right: 0; 
+        background: url(demo.jpg); 
+        background-attachment: fixed; 
+        filter: blur(8px); 
+    } 
+  
+    section .layout h2 { 
+        position: relative; 
+    } 
+  
+    section .layout p { 
+        position: relative; 
+    } 
+  
+    section .layout button { 
+        position: relative; 
+    } 
+</style> 
+
   
 </head>
 
@@ -306,7 +358,16 @@ body {font-family: Arial, Helvetica, sans-serif;}
   
 
 <div class="form-popup" id="myForm">
-  <form action="https://formspree.io/f/maylddao"
+  
+  <section> 
+        <div class="layout"> 
+            
+          
+          
+          
+          
+          
+          <form action="https://formspree.io/f/maylddao"
         method="POST" 
         class="form-container">
     <h1 style="text-align:center"><b>Subscribe</b></h1>
@@ -321,6 +382,16 @@ body {font-family: Arial, Helvetica, sans-serif;}
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
 </div>
+          
+          
+          
+          
+            
+  
+            
+        </div> 
+    </section> 
+  
 
 <script>
 function openForm() {
