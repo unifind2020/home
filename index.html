@@ -311,8 +311,10 @@ body {font-family: Arial, Helvetica, sans-serif;}
 </script>
   
 
-<div class="form-popup" id="myForm">
   <div class="overlay_filter" id="myFilter>
+  </div>
+                                  
+<div class="form-popup" id="myForm">
                                   
         <form action="https://formspree.io/f/maylddao"
           method="POST" 
@@ -327,18 +329,21 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
       <button type="submit" class="btn">Send</button>
       <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-    </div>
+    
   </form>
 </div>
   
 
 <script>
 function openForm() {
+                                                                    
+  document.getElementById("myFilter").style.display = "block";
   document.getElementById("myForm").style.display = "block";
 }
 
 function closeForm() {
-  document.getElementById("myForm").style.display = "none";
+  document.getElementById("myForm").style.display = "none";                               
+  document.getElementById("myFilter").style.display = "none";
 }
 </script>
   
